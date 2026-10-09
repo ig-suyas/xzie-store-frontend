@@ -31,7 +31,6 @@ function Nav() {
       </nav>
       <div className="nav-r">
         {user?.role === 'USER' && <Link to="/cart" className="iconbtn" aria-label="Cart"><ShoppingBag size={22} />{count > 0 && <b className="pill">{count}</b>}</Link>}
-        <span style={{ background: 'red', color: '#fff', padding: '2px 8px', borderRadius: 8 }}>TEST</span>
         <ChatWidget />
         {user ? (
           <div className="dd" ref={ref}>
